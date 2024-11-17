@@ -14,9 +14,9 @@
 
 .Name {
     color: #FFD700;
-    font-size: 35Px;
+    font-size: 2em;
     font-family: Arial;
-    padding-left: 1px;
+    padding-left: 10px;
     float: left;
     padding-top: 10px;
     font-weight: bold;
@@ -24,9 +24,11 @@
 }
 
 .navbar {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px
     height: 75px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .menu{
@@ -40,13 +42,14 @@ ul {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 ul li {
     list-style: none;
     margin-left: 62px;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 1em;
     white-space: nowrap;
 }
 
@@ -71,7 +74,9 @@ h1 {
 }
 
 .content{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
     margin: 20px auto;
     color: #fff;
     padding-top: 20px;
@@ -152,5 +157,23 @@ form button:hover{
     font-size: 16px;
     font-family: Arial;
 }
+
+@media (max-width: 768px) {
+    .navbar,
+    .content {
+        padding: 10px;
+    }
+
+    .Name {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        margin-left: 10px;
+        font-size: 0.9em;
+    }
+}
+
+
 
 
